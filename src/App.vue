@@ -2,10 +2,12 @@
   <div id="app">
 
     <gradient-background>
-      <div class='title' slot="title">
+      <div class='title'
+           :class="{'authorized' : authorized}"
+           slot="title">
         <b>R</b>esume
         <span class="github"><a href="https://github.com/ulivz" target="_blank"><i>@ulivz</i></a></span>
-        <ul class="switch">
+        <ul class="switch" v-if="authorized">
           <li v-for="item, index in routes" :key='index'
               @click="switchMode(index)"
               :class="{'active' : activeIndex === index}">{{ item.name }}
@@ -150,6 +152,8 @@
   }
 
   .gradient-background .title {
+    transition: all 0.5s;
+    position: relative;
     box-sizing: border-box;
     padding: 40px 45px;
     font-size: 60px;
@@ -172,6 +176,15 @@
     list-style: none;
     display: inline-block;
     font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    .gradient-background .switch {
+      float: none;
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+    }
   }
 
   .switch li {
@@ -205,7 +218,7 @@
     height: 40px;
     font-size: 20px;
     text-indent: 10px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
   }
 
   .authorization button {
@@ -229,6 +242,10 @@
 
     .gradient-background .title {
       padding: 40px;
+    }
+
+    .gradient-background .title.authorized {
+      padding: 20px 40px;
     }
   }
 
