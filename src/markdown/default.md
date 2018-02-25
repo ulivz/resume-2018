@@ -1,5 +1,3 @@
-# ULIVZ's Resume
-
 ## 1 自我介绍
 
 陈昊励，`94`年前端，来自湖北，现就职于 [eBay](http://www.ebay.com)。
@@ -66,7 +64,7 @@
   - 书写Gulp插件来完成SVG的构建(生成代码/压缩/预览)
   - 完成核心的全响应式图片组件（支持DPR/多类型/多设备）
   - 参与所有页面的开发
-  - 独立负责 https://www.vivanuncios.com.mx/ 首页从无到有
+  - 独立负责 [Vivanuncios](https://www.vivanuncios.com.mx/) 首页从无到有
   - 广告：Ad Banner / Adsense
   - SEO
   - 代码迁移工具（从`handlebar`转成`marko`）
@@ -138,60 +136,13 @@
 
   - `bolt-jira-helpers`： 一个用于生成`JIRA Report`命令行工具
   - `bolt-jira-report`： 一个用于展示的`JIRA UI`（前后端分离）
-  - `hbs-to-marko`: 转换 `hbs` 语法到 `marko`
-  - `bolt-2dot0-docs-generator`: 文档生成工具
+  - `hbs-to-marko`: 代码迁移工具，转换 `hbs` 语法到 `marko`
+  - `bolt-2dot0-docs-generator`: 为团队定制的文档生成工具
 
 
 ## 6 总结
 
-- 非常喜欢分享，期望去一家有团队和技术氛围、有活力的公司（非常乐意`997`和加班）
-
-
-## 7 附录
-
-### eBay期间
-
-  - Shopping Car
-
-	<details>
-	<summary>1. Expand Animation</summary>
-		![](https://raw.githubusercontent.com/ulivz/static-files/master/images/myads_checkout_button_01.gif)
-	</details>
-	<details>
-	<summary>2. Selection</summary>
-		![](https://raw.githubusercontent.com/ulivz/static-files/master/images/myads_checkout_button_02.gif)
-	</details>
-
-  - Webpack
-
-    <details>
-	<summary>1. Partial Pack</summary>
-
-	<br>由于我们是一个一套代码服务于`6`个国家的多页应用，最早的时候，项目启动时`webpack build`需要大约`60s`, 同时，每一次更改都会重新打包所有代码，这不仅会耗费大量的时间，随着代码的增长，开发体验将会越来越差。经过分析，我发现，在某一段时间内，我们可能只会集中于某个`locale`进行开发。结合这样的实际开发场景，我实现了**局部打包**的构建, 让开发人员可以选择基于哪个`locale`进行开发。
-	<br><br>
-
-	</details>
-
-	<details>
-	<summary>2. Entries Reduce</summary>
-
-	<br>多页应用的的第一问题就是：需要基于页面和设备来构建。我们有**6**个`locale`，**3**种设备模式（Desktop、Mobile、Tablet），**10**个页面，这样下来，构建时`entry`的数量大约是`180`个——这将带来庞大的build时间！
-
-	<br><br>通过分析，我们可以在构建期对每个`entry`所依赖的`modules`进行分析，从而得出哪些是重复的，于是得出下述的架构图：
-
-	![](https://raw.githubusercontent.com/ulivz/static-files/master/images/webpack_entries_reduce.png)
-
-	方案的实施，最终通过在`Gulp`层收集依赖，然后写了一个`webpack`插件(我将它命名为`EntriesReducePlugin`)完成了这项任务。
-
-	最终，经过`Partial Pack`和`Entries Reduce`共同的的优化，`webpack`首次打包的时间减少到原来的`1/3`左右。
-
-	<br><br>优化前：
-
-	![](https://raw.githubusercontent.com/ulivz/static-files/master/images/webpack_before.png)
-
-	<br><br>优化后：
-
-	![](https://raw.githubusercontent.com/ulivz/static-files/master/images/webpack_after.png)
-
-	</details>
+- 喜欢分享，在`eBay`给小伙伴们分享过`React`;
+- 期望身边也有热衷开源的小伙伴；
+- 期望为一家有团队和技术氛围、有活力的公司做贡献。
 
