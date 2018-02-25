@@ -1,3 +1,3 @@
 # resume
 
-https://www.v2js.com/resume-2018/
+http://www.v2js.com/resume-2018/
