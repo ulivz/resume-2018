@@ -1,0 +1,197 @@
+# ULIVZ's Resume
+
+## 1 自我介绍
+
+陈昊励，`94`年前端，来自湖北，现就职于 [eBay](http://www.ebay.com)。
+
+<!-- 曾就职于 [SKG](http://www.skg.com) <sup>[1]</sup> -->
+
+从初中开始一直坚持视觉设计，对色彩和布局有较深的理解。大学主期间攻汇编和`C`，曾参加西门子编程比赛获得国一。毕业后从`ng`起手做`app`，后来转入`Vue`，`React`和`Node.js`，钟爱研究前端工程化的各种最佳实践，擅长组件化编程以及研发各类提高生产效率的工具，热衷开源，同时也是一些开源作品(如`Vue`)的贡献者。
+
+
+## 2 基本信息
+
+- 姓名：陈昊励
+- Github：https://github.com/ulivz
+- 期望工作地点: 上海 / 杭州
+- 学历：三峡大学 · 自动化
+- 主修：`汇编`、`C`、`PLC`
+- 英语：`CET-6`
+- 绩点：`3.87/4`(两次专业第一)
+- 邮箱：chl814@foxmail.com
+- 电话：`+86 176 2114 5097`
+
+
+## 3 技术栈
+
+- JavaScript / ESNext
+- RegExp
+- TypeScript
+- Vue / React / AngularJS / Marko.js
+- Node.js
+- Express / Koa
+- Rollup / Webpack / Gulp
+- CSS / SCSS / LESS / Stylus / PostCSS
+- Responsive Design / Animation
+- Cordova / Weex
+- Git / Linux
+- MySQL / MongoDB / SQLite
+- Illustrator / PhotoShop / Sketch
+
+
+## 4 工作经历
+
+### 4.1 eBay
+
+- **时间**：2017.4 至今
+
+- **网站**：
+	- www.vivanuncios.com.mx （墨西哥）
+	- www.gumtree.co.za （南非）
+	- www.alamaula.com （阿根廷）
+	- www.gumtree.ie （爱尔兰）
+	- www.gumtree.pl （波兰）
+	- www.gumtree.sg （新加坡）
+
+- **项目描述**：
+
+  团队隶属于 [`eBay Classifieds Group`](https://www.ebayclassifiedsgroup.com/) ，主要负责其中`6`个国家的分类信息网站的`前端 / Node`开发，参与过少量`Java`开发。
+
+  加入团队初期，前端部分刚刚从`Java`端拆分，引入`Node`作为中间层，一年的时间里，参与项目完成了从早期的`Handlebars.js`（纯SSR）到组件化`Marko.js`（同构）的迁移，同时负责各类基础设施的的建设和优化。
+
+- **负责内容**：
+
+  - Webpack、Gulp构建优化
+  - 开发流程优化
+  - 书写Gulp插件来完成SVG的构建(生成代码/压缩/预览)
+  - 完成核心的全响应式图片组件（支持DPR/多类型/多设备）
+  - 参与所有页面的开发
+  - 独立负责 https://www.vivanuncios.com.mx/ 首页从无到有
+  - 广告：Ad Banner / Adsense
+  - SEO
+  - 代码迁移工具（从`handlebar`转成`marko`）
+  - 页面体积优化
+  - 页面级资源拆分（引入TypeScript，构建组件树完成）
+  - 完成CSS/SCSS基础设施（主题/配色/布局/文档/规范/mixin/placeholder等）
+  - 动画基础设施建设
+
+### 4.2 SKG
+
+- **时间**：2016.7 - 2017.1
+
+- **网站**：
+  - www.skg.com （首页）
+
+- **项目描述**：
+
+  先后参与开发 `SKG微信公众号`(关注`SKG生活攻略`可见)，`SKG产品知识库`，`SKG产品视频中心`，[`SKG官网`](www.skg.com)，以上项目的技术栈是`jQuery`、`ES5`。
+
+  从业期间，较大型的一个项目是 `SKG Work APP`(内网可见)，技术栈是`ES5`、`AngularJS`、`Cordova`、`Ionic`和`SQLite`。这是一个`0`开始的给内部人员使用的`Hybird App`。负责了该`APP`全部的`UI`设计以及大部分的代码编写，其功能包含了内网新闻、聊天、QA、CRM、邮箱以及给供应商和经销商使用的模块。在项目后期独挑大梁自学`Node.js`，从而引入了`Gulp`，实现了合并代码、路径替换、基于环境变量的构建等功能，完成了从开发到上线的自动化构建。同时，还使用`Node.js`和`MySQL`来迁移了`login`功能.
+
+
+### 4.3 其他项目
+
+#### DDDML（基于领域驱动设计的开源ERP-前端部分）
+
+- **名称**： [dddml-dotnet-tools](https://github.com/wubuku/dddml-dotnet-tools)
+- **技术栈**：`Vue全家桶`、`TypeScript`、`Lodash`、`mocha`等。
+- **项目描述**：
+
+  项目的定位属于开源`ERP`，目前已经成功推广给`Haier`，后端参考了 [ADempiere](https://github.com/adempiere/adempiere) 和 [ofbiz](https://github.com/apache/ofbiz) 等经典的开源`ERP`，但开发模式选用了`DDD`（领域驱动设计）。项目的出发点是让半开发人员能够通过领域建模和配置（书写`DSL`）就能得到一套可用的系统，从而达到验证系统设计可行性的目的。
+
+  因为是元编程，因此整个项目的核心前端代码都基本做到了可复用，项目的核心在于从元数据抽象出模型层的结构设计，最后再通过VM层映射到视图层，数据流和状态流大多在VM层手写完成，`vue`组件最终只起到了展示的作用。
+
+- **备注**：此项目是在休业期（2017.2-2017.4）帮一个朋友做的。
+
+
+## 5 轮子
+
+### 5.1 独立开发
+
+  - [dmo](https://github.com/ulivz/dmo): 一个极简配置的`REPL`生成器
+  - [poz](https://github.com/ulivz/poz): 一个脚手架生成器，包含[vue-cli](https://github.com/vuejs/vue-cli)和 [sao](https://github.com/saojs/sao)的全部功能，同时提供了更全面的包管理功能。
+  - [awesome-front-end](https://github.com/ulivz/awesome-front-end): 收集那些有价值的前端项目
+  - [vue-codemirror-component](https://github.com/ulivz/vue-codemirror-component): 自带代码分割的`codemirror`组件
+  - [parse7](https://github.com/ulivz/parse7): 一个极简的`HTML parser`
+  - [alphax](https://github.com/ulivz/alphax): 基于`Stream`和`Glob`的类似于 [metalsmith](https://github.com/segmentio/metalsmith) 的静态网站生成器
+  - [webpack-simple-redux](https://github.com/ulivz/webpack-simple-redux): Redux开发样板文件
+  - [webpack-simple-vuex](https://github.com/ulivz/webpack-simple-vuex): Vuex开发样板文件
+  - [usync](https://github.com/ulivz/usync)：一个可拓展的串/并行任务流程控制工具
+  - [light-stylus](https://github.com/ulivz/light-stylus): 基于`Stylus`的CSS工具库
+  - [vue-typescript-template-ui](https://github.com/ulivz/vue-typescript-template-ui): Vue/TypeScript的开发样板文件
+
+<span style="color: #aaa; font-size: 12px ">注：仅列举部分项目，全部项目请见：<a href='https://github.com/ulivz?tab=repositories' target='_blank'>ulivz/repositories</a><span>
+
+### 5.2 贡献代码
+
+  - [vue](https://github.com/vuejs/vue)
+  - [vuex](https://github.com/vuejs/vuex)
+  - [marko](https://github.com/marko-js/marko)
+  - [es6tutorial](https://github.com/ruanyf/es6tutorial)
+  - [webpack-simple](https://github.com/vuejs-templates/webpack-simple)
+  - [gulp-imagemin](https://github.com/sindresorhus/gulp-imagemin)
+  - [You-Dont-Need-jQuery](https://github.com/nefe/You-Dont-Need-jQuery)
+
+<span style="color: #aaa; font-size: 12px ">注：为以上项目贡献过源码。<span>
+
+### 5.3 eBay内部
+
+  - `bolt-jira-helpers`： 一个用于生成`JIRA Report`命令行工具
+  - `bolt-jira-report`： 一个用于展示的`JIRA UI`（前后端分离）
+  - `hbs-to-marko`: 转换 `hbs` 语法到 `marko`
+  - `bolt-2dot0-docs-generator`: 文档生成工具
+
+
+## 6 总结
+
+- 非常喜欢分享，期望去一家有团队和技术氛围、有活力的公司（非常乐意`997`和加班）
+
+
+## 7 附录
+
+### eBay期间
+
+  - Shopping Car
+
+	<details>
+	<summary>1. Expand Animation</summary>
+		![](https://raw.githubusercontent.com/ulivz/static-files/master/images/myads_checkout_button_01.gif)
+	</details>
+	<details>
+	<summary>2. Selection</summary>
+		![](https://raw.githubusercontent.com/ulivz/static-files/master/images/myads_checkout_button_02.gif)
+	</details>
+
+  - Webpack
+
+    <details>
+	<summary>1. Partial Pack</summary>
+
+	<br>由于我们是一个一套代码服务于`6`个国家的多页应用，最早的时候，项目启动时`webpack build`需要大约`60s`, 同时，每一次更改都会重新打包所有代码，这不仅会耗费大量的时间，随着代码的增长，开发体验将会越来越差。经过分析，我发现，在某一段时间内，我们可能只会集中于某个`locale`进行开发。结合这样的实际开发场景，我实现了**局部打包**的构建, 让开发人员可以选择基于哪个`locale`进行开发。
+	<br><br>
+
+	</details>
+
+	<details>
+	<summary>2. Entries Reduce</summary>
+
+	<br>多页应用的的第一问题就是：需要基于页面和设备来构建。我们有**6**个`locale`，**3**种设备模式（Desktop、Mobile、Tablet），**10**个页面，这样下来，构建时`entry`的数量大约是`180`个——这将带来庞大的build时间！
+
+	<br><br>通过分析，我们可以在构建期对每个`entry`所依赖的`modules`进行分析，从而得出哪些是重复的，于是得出下述的架构图：
+
+	![](https://raw.githubusercontent.com/ulivz/static-files/master/images/webpack_entries_reduce.png)
+
+	方案的实施，最终通过在`Gulp`层收集依赖，然后写了一个`webpack`插件(我将它命名为`EntriesReducePlugin`)完成了这项任务。
+
+	最终，经过`Partial Pack`和`Entries Reduce`共同的的优化，`webpack`首次打包的时间减少到原来的`1/3`左右。
+
+	<br><br>优化前：
+
+	![](https://raw.githubusercontent.com/ulivz/static-files/master/images/webpack_before.png)
+
+	<br><br>优化后：
+
+	![](https://raw.githubusercontent.com/ulivz/static-files/master/images/webpack_after.png)
+
+	</details>
+
