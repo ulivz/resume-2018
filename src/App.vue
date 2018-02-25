@@ -222,6 +222,8 @@
   }
 
   .authorization button {
+    border-radius: 5px;
+    border: 1px solid #ccc;
     float: right;
     width: 40px;
     margin-top: 10px;
