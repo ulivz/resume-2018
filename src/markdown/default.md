@@ -61,16 +61,16 @@
 
   - Webpack、Gulp构建优化
   - 开发流程优化
-  - 书写Gulp插件来完成SVG的构建(生成代码/压缩/预览)
-  - 完成核心的全响应式图片组件（支持DPR/多类型/多设备）
+  - 手写`Gulp`插件来完成`SVG`的构建(生成代码/压缩/预览)
+  - 完成核心的全响应式图片组件（支持`DPR`/多类型/多设备）
   - 参与所有页面的开发
   - 独立负责 [Vivanuncios](https://www.vivanuncios.com.mx/) 首页从无到有
-  - 广告：Ad Banner / Adsense
-  - SEO
+  - 广告：`Ad Banner/Adsense`
+  - `SEO`
   - 代码迁移工具（从`handlebar`转成`marko`）
   - 页面体积优化
-  - 页面级资源拆分（引入TypeScript，构建组件树完成）
-  - 完成CSS/SCSS基础设施（主题/配色/布局/文档/规范/mixin/placeholder等）
+  - 页面级资源拆分（引入`TypeScript`，构建组件树完成）
+  - 完成`CSS/SCSS`基础设施（主题/配色/布局/文档/规范/mixin/placeholder等）
   - 动画基础设施建设
 
 ### 4.2 SKG
@@ -84,7 +84,9 @@
 
   先后参与开发 `SKG微信公众号`(关注`SKG生活攻略`可见)，`SKG产品知识库`，`SKG产品视频中心`，[`SKG官网`](www.skg.com)，以上项目的技术栈是`jQuery`、`ES5`。
 
-  从业期间，较大型的一个项目是 `SKG Work APP`(内网可见)，技术栈是`ES5`、`AngularJS`、`Cordova`、`Ionic`和`SQLite`。这是一个`0`开始的给内部人员使用的`Hybird App`。负责了该`APP`全部的`UI`设计以及大部分的代码编写，其功能包含了内网新闻、聊天、QA、CRM、邮箱以及给供应商和经销商使用的模块。在项目后期独挑大梁自学`Node.js`，从而引入了`Gulp`，实现了合并代码、路径替换、基于环境变量的构建等功能，完成了从开发到上线的自动化构建。同时，还使用`Node.js`和`MySQL`来迁移了`login`功能.
+  从业期间，较大型的一个项目是 `SKG Work APP`(内网可见)，技术栈是`ES5`、`AngularJS`、`Cordova`、`Ionic`和`SQLite`。这是一个`0`开始的给内部人员使用的`Hybird App`。
+  
+  负责了该`APP`全部的`UI`设计以及大部分的代码编写，其功能包含了内网新闻、聊天、QA、CRM、邮箱以及给供应商和经销商使用的模块。在项目后期独挑大梁自学`Node.js`，从而引入了`Gulp`，实现了合并代码、路径替换、基于环境变量的构建等功能，完成了从开发到上线的自动化构建。同时，还使用`Node.js`和`MySQL`来迁移了`login`功能.
 
 
 ### 4.3 其他项目
@@ -97,9 +99,9 @@
 
   项目的定位属于开源`ERP`，目前已经成功推广给`Haier`，后端参考了 [ADempiere](https://github.com/adempiere/adempiere) 和 [ofbiz](https://github.com/apache/ofbiz) 等经典的开源`ERP`，但开发模式选用了`DDD`（领域驱动设计）。项目的出发点是让半开发人员能够通过领域建模和配置（书写`DSL`）就能得到一套可用的系统，从而达到验证系统设计可行性的目的。
 
-  因为是元编程，因此整个项目的核心前端代码都基本做到了可复用，项目的核心在于从元数据抽象出模型层的结构设计，最后再通过VM层映射到视图层，数据流和状态流大多在VM层手写完成，`vue`组件最终只起到了展示的作用。
+  因为是元编程，因此整个项目的核心前端代码都基本做到了可复用，项目的核心在于从元数据抽象出模型层的结构设计，最后再通过`VM`层映射到视图层，数据流和状态流大多在`VM`层手写完成，`vue`组件最终只起到了展示的作用。
 
-- **备注**：此项目是在休业期（2017.2-2017.4）帮一个朋友做的。
+- **备注**：此项目是在休业期`（2017.2-2017.4）`帮一个朋友做的。
 
 
 ## 5 轮子
@@ -115,7 +117,7 @@
   - [webpack-simple-redux](https://github.com/ulivz/webpack-simple-redux): Redux开发样板文件
   - [webpack-simple-vuex](https://github.com/ulivz/webpack-simple-vuex): Vuex开发样板文件
   - [usync](https://github.com/ulivz/usync)：一个可拓展的串/并行任务流程控制工具
-  - [light-stylus](https://github.com/ulivz/light-stylus): 基于`Stylus`的CSS工具库
+  - [light-stylus](https://github.com/ulivz/light-stylus): 基于`Stylus`的CSS工具库
   - [vue-typescript-template-ui](https://github.com/ulivz/vue-typescript-template-ui): Vue/TypeScript的开发样板文件
 
 <span style="color: #aaa; font-size: 12px ">注：仅列举部分项目，全部项目请见：<a href='https://github.com/ulivz?tab=repositories' target='_blank'>ulivz/repositories</a><span>
@@ -139,10 +141,12 @@
   - `hbs-to-marko`: 代码迁移工具，转换 `hbs` 语法到 `marko`
   - `bolt-2dot0-docs-generator`: 为团队定制的文档生成工具
 
+<span style="color: #aaa; font-size: 12px ">注：以上项目的仓库均存在于内网中。<span>
 
 ## 6 总结
 
+- 喜欢造轮子和研究源码；
 - 喜欢分享，在`eBay`给小伙伴们分享过`React`;
-- 期望身边也有热衷开源的小伙伴；
+- 期望身边也有热衷开源和折腾的小伙伴；
 - 期望为一家有团队和技术氛围、有活力的公司做贡献。
 
