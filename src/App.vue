@@ -1,6 +1,12 @@
 <template>
   <div id="app">
 
+    <!--<gradient-background>-->
+      <!--<div slot="title" class="ttt">-->
+        <!--Revert-->
+      <!--</div>-->
+    <!--</gradient-background>-->
+
     <gradient-background>
       <div class='title'
            :class="{'authorized' : authorized}"
@@ -72,7 +78,7 @@
     },
     methods: {
       auth() {
-        if (this.passcode === '949494') {
+        if (this.passcode === 'aaaaaa') {
           this.authorized = true
           this.render()
           localStorage.setItem('auth', true)
@@ -147,6 +153,16 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 
+  /*.gradient-background:first-child{*/
+    /*height: 100vh;*/
+    /*line-height: 100vh;*/
+    /*text-align: center;*/
+  /*}*/
+
+  /*.ttt {*/
+    /*font-size: 300px;*/
+    /*font-family: Consolas;*/
+  /*}*/
   .gradient-background {
     height: 150px;
   }
