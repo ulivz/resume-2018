@@ -13,7 +13,7 @@
     "github-markdown-css": "^2.10.0",
     "highlight.js": "^9.12.0",
     "html2pdf.js": "^0.8.2",
-    "marked": "^0.3.16",
+    "marked": "^1.1.1",
     "vue": "^2.5.11",
     "vue-router": "^3.0.1"
   },
