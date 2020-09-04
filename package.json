@@ -30,7 +30,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.13.1",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.2",
